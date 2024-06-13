@@ -1,0 +1,17 @@
+
+/* Stocks.css */
+
+.container {
+    margin: 20px;
+    height: 800px;
+  }
+  
+  .tableContainer {
+    max-height: 800px;
+    overflow-y: auto;
+  }
+  
+  .tableRow:hover {
+    background-color: #f5f5f5;
+  }
+  

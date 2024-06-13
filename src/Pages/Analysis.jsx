@@ -165,7 +165,6 @@ function Analysis() {
                         </Table>
                     </TableContainer>
                     <TablePagination
-                        rowsPerPageOptions={[3, 6, 9]}
                         component="div"
                         count={filteredPatterns.length}
                         rowsPerPage={rowsPerPage}

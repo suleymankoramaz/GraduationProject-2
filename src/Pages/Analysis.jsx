@@ -15,49 +15,49 @@ import { ascending } from 'd3';
 const patterns = [
     {
         name: "Ascending Triangle",
-        image: "src/assets/patterns/ascending-triangle.png",
+        image: "../assets/patterns/ascending-triangle.png",
         description: "An ascending triangle is a bullish chart pattern used in technical analysis.",
         usage: "This pattern is used to predict a breakout in the upward direction."
     },
     {
         name: "Triple Top",
-        image: "src/assets/patterns/triple-top.png",
+        image: "../assets/patterns/triple-top.png",
         description: "A triple top is a bearish chart pattern used in technical analysis.",
         usage: "This pattern indicates that the asset is facing significant resistance and may reverse downward."
     },
     {
         name: "Double Bottom",
-        image: "src/assets/patterns/double-bottom.jpg",
+        image: "../assets/patterns/double-bottom.jpg",
         description: "A double bottom is a bullish chart pattern used in technical analysis.",
         usage: "This pattern suggests that the asset has found support at the lower price and may move upwards."
     },
     {
         name: "Head and Shoulders",
-        image: "src/assets/patterns/head-and-shoulders-pattern.jpg",
+        image: "../assets/patterns/head-and-shoulders-pattern.jpg",
         description: "The head and shoulders pattern is a bearish reversal pattern.",
         usage: "It indicates a trend reversal from bullish to bearish."
     },
     {
         name: "Bear Flag",
-        image: "src/assets/patterns/bear-flag.png",
+        image: "../assets/patterns/bear-flag.png",
         description: "The bear flag is a bearish continuation pattern.",
         usage: "It indicates a brief consolidation followed by a continuation of the downtrend."
     },
     {
         name: "Bull Flag",
-        image: "src/assets/patterns/bull-flag.png",
+        image: "../assets/patterns/bull-flag.png",
         description: "The bull flag is a bullish continuation pattern.",
         usage: "It indicates a brief consolidation followed by a continuation of the uptrend."
     },
     {
         name: "Rising Wedge",
-        image: "src/assets/patterns/rising-fedge.png",
+        image: "../assets/patterns/rising-fedge.png",
         description: "The rising wedge is a bearish reversal pattern.",
         usage: "It indicates a trend reversal from bullish to bearish."
     },
     {
         name: "Falling Wedge",
-        image: "src/assets/patterns/falling-edge.png",
+        image: "../assets/patterns/falling-edge.png",
         description: "The falling wedge is a bullish reversal pattern.",
         usage: "It indicates a trend reversal from bearish to bullish."
     }
@@ -79,7 +79,7 @@ function Analysis() {
         const fetchData = async () => {
             const response = symbol
                 ? await getData(`http://127.0.0.1:5000/stock_yearly/${symbol}`)
-                : await getData("https://cdn.rawgit.com/rrag/react-stockcharts/master/docs/data/MSFT.tsv");
+                : await getData("http://127.0.0.1:5000/stock_yearly/XU100.IS");
             setData(response);
         };
 
